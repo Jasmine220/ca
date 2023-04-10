@@ -1,0 +1,28 @@
+{
+    "name": "rule-engines",
+    "version": "1.0.0",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "npx tsc --incremental",
+        "clean": "rm -rf build tsconfig.tsbuildinfo",
+        "lint": "npx eslint src/** --fix",
+        "format": "npx prettier --write \"!**/build\" \"**/*.{ts,tsx,md,js,json}\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "prettier": "prettier-config-custom",
+    "author": "Mạnh Hùng",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "eslint-config-custom": "workspace:*",
+        "prettier-config-custom": "workspace:*",
+        "tsconfig": "workspace:*",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "abstract-syntax-tree": "^2.20.6",
+        "entities": "workspace:*",
+        "utils": "workspace:*",
+        "logger": "workspace:*"
+    }
+}

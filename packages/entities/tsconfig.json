@@ -1,0 +1,9 @@
+{
+    "extends": "tsconfig/pkgs.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "build",
+        "allowJs": true
+    },
+    "exclude": ["node_modules", "build"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx pnpm -r build",
+    "clean": "npx pnpm -r clean",
+    "lint": "npx pnpm -r lint",
+    "format": "npx pnpm -r format",
+    "start": "npx pnpm -r start"
+  },
+  "author": "Mạnh Hùng",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-scope": "^7.1.1",
+    "eslint-utils": "^3.0.0",
+    "eslint-visitor-keys": "^3.3.0",
+    "prettier": "^2.8.1",
+    "prettier-linter-helpers": "^1.0.0"
+  },
+  "keywords": [],
+  "description": ""
+}

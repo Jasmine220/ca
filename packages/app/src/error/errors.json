@@ -1,0 +1,156 @@
+[
+    {
+        "errorCode": "BODY_JSON_SYNTAX",
+        "description": {
+            "en": "The body of request must be json format.",
+            "vi": "Định dạng của body trong request phải là json."
+        }
+    },
+    {
+        "errorCode": "ACCOUNT_IS_LOCKED",
+        "description": {
+            "en": "Your account is temporarily locked due to unsuccessful login attempts 5 times in a row. Please login again after 30 minutes or contact Admin for support.",
+            "vi": "Tài khoản của anh/chị tạm thời bị khóa do đăng nhập không thành công liên tiếp 5 lần. Vui lòng đăng nhập lại sau 30 phút hoặc liên hệ Admin để được hỗ trợ."
+        }
+    },
+    {
+        "errorCode": "NOT_FOUND_EMAIL",
+        "description": {
+            "en": "The account does not exist. Please check again.",
+            "vi": "Tài khoản không tồn tại trong hệ thống. Vui lòng kiểm tra lại."
+        }
+    },
+    {
+        "errorCode": "NOT_FOUND_ACTION",
+        "description": {
+            "en": "The account does not have permission to edit comments. Please check again",
+            "vi": "Tài khoản không có quyền chỉnh sửa bình luận. Vui lòng kiểm tra lại."
+        }
+    },
+    {
+        "errorCode": "ACCOUNT_IS_INACTIVE",
+        "description": {
+            "en": "Your account is temporarily inactive. Please contact Admin for support.",
+            "vi": "Tài khoản của bạn đã bị inactive. Vui lòng liên hệ Admin để được hỗ trợ."
+        }
+    },
+    {
+        "errorCode": "ROLES_IS_EMPTY",
+        "description": {
+            "en": "The account is not authorized. Please contact Admin for support.",
+            "vi": "Tài khoản chưa được phân quyền trên hệ thống. Vui lòng liên hệ Admin để được hỗ trợ."
+        }
+    },
+    {
+        "errorCode": "WRONG_EMAIL_OR_PASSWORD",
+        "description": {
+            "en": "Your email or password is not correct",
+            "vi": "Tên địa chỉ email hoặc mật khẩu không chính xác"
+        }
+    },
+    {
+        "errorCode": "NOT_FOUND_OBJECT_FILE",
+        "description": {
+            "en": "The object file was not found on this server",
+            "vi": "Không tìm thấy thông tin được yêu cầu."
+        }
+    },
+    {
+        "errorCode": "NOT_FOUND_TEMPLATE_EMAIL",
+        "description": {
+            "en": "The template email was not found on this server",
+            "vi": "Không tìm thấy thông tin được yêu cầu."
+        }
+    },
+    {
+        "errorCode": "INTERNAL_SERVER_ERROR",
+        "description": {
+            "en": "An error occurred, please try again later.",
+            "vi": "Đã có lỗi xẩy ra, xin vui lòng thử lại sau."
+        }
+    },
+    {
+        "errorCode": "ACTION_NOT_ALLOWED",
+        "description": {
+            "en": "You are not allowed to do this",
+            "vi": "Bạn không được cho phép làm điều này"
+        }
+    },
+    {
+        "errorCode": "ROLES_BAD",
+        "description": {
+            "en": "Invalid permission",
+            "vi": "Quyền không hợp lệ"
+        }
+    },
+    {
+        "errorCode": "REGISTERED_EMAIL",
+        "description": {
+            "en": "The email is used for registration",
+            "vi": "Tên địa chỉ email đã được sử dụng"
+        }
+    },
+    {
+        "errorCode": "INVALID_TOKEN",
+        "description": {
+            "en": "Your token is not valid",
+            "vi": "Token của bạn không hợp lệ"
+        }
+    },
+    {
+        "errorCode": "NO_TOKEN",
+        "description": {
+            "en": "Missing token in headers",
+            "vi": "Thiếu token trong headers"
+        }
+    },
+    {
+        "errorCode": "TOKEN_EXPIRED",
+        "description": {
+            "en": "Your token expired",
+            "vi": "Token của bạn đã hết hạn"
+        }
+    },
+    {
+        "errorCode": "UNKNOWN_ERROR",
+        "description": {
+            "en": "An unknown error has occurred",
+            "vi": "Có lỗi đã xảy ra"
+        }
+    },
+    {
+        "errorCode": "INVALID_DATA",
+        "description": {
+            "en": "Data input is not valid",
+            "vi": "Dữ liệu đầu vào không hợp lệ"
+        }
+    },
+    {
+        "errorCode": "URL_NOT_FOUND",
+        "description": {
+            "en": "The requested URL was not found on this server",
+            "vi": "Không tìm thấy đường dẫn được yêu cầu"
+        }
+    },
+    {
+        "errorCode": "NOT_FOUND",
+        "description": {
+            "en": "The requested resource was not found on this server",
+            "vi": "Không tìm thấy thông tin được yêu cầu."
+        }
+    },
+    {
+        "errorCode": "METHOD_NOT_ALLOWED",
+        "description": {
+            "en": "The method is not allowed for requested URL",
+            "vi": "Phương thức này không được hỗ trợ."
+        }
+    },
+    {
+        "errorCode": "DATABASE_SERVER_ERROR",
+        "description": {
+            "en": "An error has occurred in the database server",
+            "vi": "Có lỗi xẩy ra với máy chủ cơ sở dữ liệu"
+        }
+    }
+]

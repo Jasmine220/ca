@@ -1,0 +1,89 @@
+version: "3.8"
+
+services:
+  auth:
+    container_name: auth 
+    hostname: ca.auth
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+    restart: always
+    ports:
+      - 6801:6801
+    user: root
+    env_file: ./apps/auth/.env
+    environment:
+      - CA_AUTH_USER_SERVICE_HOST=http://ca.user
+      - CA_AUTH_TENANT_SERVICE_HOST=http://ca.tenant
+      - CA_AUTH_GROUP_SERVICE_HOST=http://ca.user
+      - CA_AUTH_MAIL_SERVICE_HOST=http://ca.mail
+
+  user:
+    container_name: user
+    hostname: ca.user
+    build:
+      context: .
+      dockerfile: ./apps/user/Dockerfile
+    restart: always
+    ports:
+      - 6802:6802
+    user: root
+    env_file: ./apps/user/.env
+    environment:
+      - CA_USER_TENANT_SERVICE_HOST=http://ca.tenant
+      - CA_USER_AUTH_SERVICE_HOST=http://ca.auth
+
+  mail:
+    container_name: mail
+    hostname: ca.mail
+    build:
+      context: .
+      dockerfile: ./apps/mail/Dockerfile
+    restart: always
+    ports:
+      - 6803:6803
+    user: root
+    env_file: ./apps/mail/.env
+
+  tenant:
+    container_name: tenant
+    hostname: ca.tenant
+    build:
+      context: .
+      dockerfile: ./apps/tenant/Dockerfile
+    restart: always
+    ports:
+      - 6804:6804
+    user: root
+    env_file: ./apps/tenant/.env
+    environment:
+      - CA_TENANT_USER_SERVICE_HOST=http://ca.user
+      - CA_TENANT_AUTH_SERVICE_HOST=http://ca.auth
+
+  request:
+    container_name: request
+    hostname: ca.request
+    build:
+      context: .
+      dockerfile: ./apps/request/Dockerfile
+    restart: always
+    ports:
+      - 6806:6806
+    user: root
+    env_file: ./apps/request/.env
+
+  report:
+    container_name: report
+    hostname: ca.report
+    build:
+      context: .
+      dockerfile: ./apps/report/Dockerfile
+    restart: always
+    ports:
+      - 6810:6810
+    user: root
+    env_file: ./apps/report/.env
+
+networks:
+  default:
+    name: ca-network
